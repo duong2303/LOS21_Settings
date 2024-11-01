@@ -2119,7 +2119,7 @@
                 android:value="true" />
         </activity>
 
-        <activity android:name="Settings$PrivacySettingsActivity"
+        <!-- <activity android:name="Settings$PrivacySettingsActivity"
                 android:label="@string/privacy_settings_title"
                 android:icon="@drawable/ic_settings_backup"
                 android:exported="true"
@@ -2168,7 +2168,7 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                        android:value="com.android.settings.privacy.PrivacyControlsFragment" />
-        </activity>
+        </activity> -->
 
         <activity android:name=".development.tare.TareHomePage"
                   android:label="@string/tare_settings"
@@ -2551,7 +2551,7 @@
                 android:value="true" />
         </activity>
 
-        <activity
+        <!-- <activity
             android:name="Settings$EnterprisePrivacySettingsActivity"
             android:exported="true"
             android:label="@string/enterprise_privacy_settings">
@@ -2563,7 +2563,7 @@
                 android:value="com.android.settings.enterprise.EnterprisePrivacySettings" />
             <meta-data android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
                        android:value="@string/menu_key_privacy"/>
-        </activity>
+        </activity> -->
 
         <!-- Lock screen settings -->
         <activity android:name=".password.ConfirmDeviceCredentialActivity"

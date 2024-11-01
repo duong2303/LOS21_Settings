@@ -145,7 +145,7 @@
         settings:highlightableMenuKey="@string/menu_key_security"
         settings:controller="com.android.settings.security.TopLevelSecurityEntryPreferenceController"/>
 
-    <com.android.settings.widget.HomepagePreference
+    <!-- <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.privacy.PrivacyDashboardFragment"
         android:icon="@drawable/ic_settings_privacy"
         android:key="top_level_privacy"
@@ -153,7 +153,7 @@
         android:title="@string/privacy_dashboard_title"
         android:summary="@string/privacy_dashboard_summary"
         settings:highlightableMenuKey="@string/menu_key_privacy"
-        settings:controller="com.android.settings.privacy.TopLevelPrivacyEntryPreferenceController"/>
+        settings:controller="com.android.settings.privacy.TopLevelPrivacyEntryPreferenceController"/> -->
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.location.LocationSettings"
