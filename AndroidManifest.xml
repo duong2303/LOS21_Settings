@@ -736,7 +736,7 @@
                        android:value="@string/menu_key_security"/>
         </activity>
 
-        <activity android:name="Settings$FingerprintSettingsActivity"
+        <!-- <activity android:name="Settings$FingerprintSettingsActivity"
                   android:label="@string/security_settings_fingerprint_preference_title"
                   android:exported="true"
                   android:icon="@drawable/ic_fingerprint_header">
@@ -748,7 +748,7 @@
                        android:value="com.android.settings.biometrics.fingerprint.FingerprintSettings$FingerprintSettingsFragment" />
             <meta-data android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
                        android:value="@string/menu_key_security"/>
-        </activity>
+        </activity> -->
 
         <activity android:name="Settings$CombinedBiometricSettingsActivity"
                   android:label="@string/security_settings_biometric_preference_title"
@@ -2696,7 +2696,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".biometrics.fingerprint.FingerprintSettings"
+        <!-- <activity android:name=".biometrics.fingerprint.FingerprintSettings"
                   android:exported="false"
                   android:taskAffinity="com.android.settings.root" />
         <activity android:name=".biometrics.fingerprint.FingerprintEnrollFindSensor" android:exported="false"/>
@@ -2711,7 +2711,7 @@
                 <category android:name="android.intent.category.BROWSABLE" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-        </activity>
+        </activity> -->
 
         <activity android:name=".biometrics2.ui.view.FingerprintEnrollmentActivity"
             android:exported="true"
@@ -5074,7 +5074,7 @@
         <activity android:name=".spa.SpaBridgeActivity" android:exported="false"/>
         <activity android:name=".spa.SpaAppBridgeActivity" android:exported="false"/>
 
-        <activity android:name=".Settings$FingerprintSettingsActivityV2"
+        <!-- <activity android:name=".Settings$FingerprintSettingsActivityV2"
             android:label="@string/security_settings_fingerprint_preference_title"
             android:exported="false"
             android:icon="@drawable/ic_fingerprint_header">
@@ -5086,7 +5086,7 @@
                 android:value="com.android.settings.biometrics.fingerprint2.ui.settings.fragment.FingerprintSettingsV2Fragment" />
             <meta-data android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
                 android:value="@string/menu_key_security"/>
-        </activity>
+        </activity> -->
 
          <provider
             android:name=".biometrics.BiometricSettingsProvider"

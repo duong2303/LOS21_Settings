@@ -47,8 +47,9 @@ public class FingerprintStatusUtils {
      * Returns whether the fingerprint settings entity should be shown.
      */
     public boolean isAvailable() {
-        return !Utils.isMultipleBiometricsSupported(mContext)
-                && Utils.hasFingerprintHardware(mContext);
+        // return !Utils.isMultipleBiometricsSupported(mContext)
+        //         && Utils.hasFingerprintHardware(mContext);
+        return false;
     }
 
     /**

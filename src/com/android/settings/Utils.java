@@ -897,8 +897,9 @@ public final class Utils extends com.android.settingslib.Utils {
     }
 
     public static boolean hasFingerprintHardware(Context context) {
-        final FingerprintManager fingerprintManager = getFingerprintManagerOrNull(context);
-        return fingerprintManager != null && fingerprintManager.isHardwareDetected();
+        // final FingerprintManager fingerprintManager = getFingerprintManagerOrNull(context);
+        // return fingerprintManager != null && fingerprintManager.isHardwareDetected();
+        return false;
     }
 
     public static FaceManager getFaceManagerOrNull(Context context) {
