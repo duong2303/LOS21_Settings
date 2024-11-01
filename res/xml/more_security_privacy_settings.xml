@@ -24,13 +24,13 @@
     <!-- work profile security section. See also: security_advanced_settings.xml and
     privacy_advanced_settings.xml. That page also has these same entries.
      The order is -10 to make sure it is always at the top. -->
-    <PreferenceCategory
+    <!-- <PreferenceCategory
         android:order="-10"
         android:key="work_profile_category"
-        android:title="@string/work_profile_category_header">
+        android:title="@string/work_profile_category_header"> -->
 
         <!-- security_settings_unification -->
-        <com.android.settingslib.RestrictedSwitchPreference
+        <!-- <com.android.settingslib.RestrictedSwitchPreference
             android:key="unification"
             android:title="@string/lock_settings_profile_unification_title"
             android:summary="@string/lock_settings_profile_unification_summary"
@@ -51,62 +51,62 @@
             android:key="privacy_lock_screen_work_profile_notifications"
             android:title="@string/locked_work_profile_notification_title"
             android:summary="@string/summary_placeholder"
-            settings:searchable="false"/>
+            settings:searchable="false"/> -->
 
         <!-- Connected work and personal apps -->
-        <Preference
+        <!-- <Preference
             android:key="interact_across_profiles_privacy"
             android:title="@string/interact_across_profiles_title"
             android:fragment="com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesSettings"
             settings:searchable="false"
             settings:controller="com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesController" />
 
-    </PreferenceCategory>
+    </PreferenceCategory> -->
 
 
     <!-- Privacy section -->
     <!-- The order is -1 to make sure it is above all the privacy entries. Some dynamically injected entries have order 0. -->
-    <PreferenceCategory
+    <!-- <PreferenceCategory
         android:order="-1"
         android:key="privacy_category"
-        android:title="@string/privacy_header">
+        android:title="@string/privacy_header"> -->
         <!-- Accessibility usage -->
-        <Preference
+        <!-- <Preference
             android:key="privacy_accessibility_usage"
             android:title="@string/accessibility_usage_title"
             settings:controller="com.android.settings.privacy.AccessibilityUsagePreferenceController">
             <intent android:action="android.intent.action.REVIEW_ACCESSIBILITY_SERVICES"/>
-        </Preference>
+        </Preference> -->
 
         <!-- On lock screen notifications -->
-        <com.android.settings.RestrictedListPreference
+        <!-- <com.android.settings.RestrictedListPreference
             android:key="privacy_lock_screen_notifications"
             android:title="@string/lock_screen_notifs_title"
             android:summary="@string/summary_placeholder"
-            settings:searchable="false"/>
+            settings:searchable="false"/> -->
 
         <!-- Show media on lock screen -->
-        <SwitchPreferenceCompat
+        <!-- <SwitchPreferenceCompat
             android:key="privacy_media_controls_lockscreen"
             android:title="@string/media_controls_lockscreen_title"
             android:summary="@string/media_controls_lockscreen_description"
             settings:controller=
-                "com.android.settings.sound.MediaControlsLockScreenPreferenceController" />
+                "com.android.settings.sound.MediaControlsLockScreenPreferenceController" /> -->
 
         <!-- Allow software fallback for camera extensions -->
-        <SwitchPreference
+        <!-- <SwitchPreference
             android:key="privacy_camera_extensions_fallback"
             android:title="@string/camera_extensions_fallback_title"
             android:summary="@string/camera_extensions_fallback_description"
             settings:controller=
-                "com.android.settings.privacy.CameraExtensionsFallbackPreferenceController" />
+                "com.android.settings.privacy.CameraExtensionsFallbackPreferenceController" /> -->
 
         <!-- Content Capture -->
         <!-- NOTE: content capture has a different preference, depending whether or not the
              ContentCaptureService implementations defines a custom settings activitiy on its manifest.
              Hence, we show both here, but the controller itself will decide if it's available or not.
         -->
-        <SwitchPreferenceCompat
+        <!-- <SwitchPreferenceCompat
             android:key="content_capture"
             android:title="@string/content_capture"
             android:summary="@string/content_capture_summary"
@@ -118,7 +118,7 @@
             android:summary="@string/content_capture_summary"
             settings:controller="com.android.settings.privacy.EnableContentCaptureWithServiceSettingsPreferenceController"/>
 
-    </PreferenceCategory>
+    </PreferenceCategory> -->
 
     <!-- Security section. -->
     <!-- "security_category" is used to add trust agents by TrustAgentListPreferenceController -->
@@ -127,7 +127,7 @@
         android:key="security_category"
         android:title="@string/security_header" />
 
-    <Preference
+    <!-- <Preference
         android:order="230"
         android:key="content_protection_preference"
         android:title="@string/content_protection_preference_title"
@@ -185,7 +185,7 @@
             android:targetPackage="com.android.settings"
             android:targetClass="com.android.settings.Settings$IccLockSettingsActivity" />
 
-    </Preference>
+    </Preference> -->
 
     <Preference
         android:order="260"
@@ -195,7 +195,7 @@
         android:fragment="com.android.settings.security.EncryptionAndCredential"
         settings:controller="com.android.settings.security.EncryptionStatusPreferenceController" />
 
-    <Preference
+    <!-- <Preference
         android:order="270"
         android:key="manage_trust_agents"
         android:title="@string/manage_trust_agents"
@@ -218,7 +218,7 @@
         android:key="memtag_page"
         android:title="@string/memtag_title"
         android:fragment="com.android.settings.security.MemtagPage"
-        settings:controller="com.android.settings.security.MemtagPagePreferenceController" />
+        settings:controller="com.android.settings.security.MemtagPagePreferenceController" /> -->
 
 
 
